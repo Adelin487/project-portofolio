@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Adelin | Personal Portofolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===================================
+            LOADING SCREEN
+    =================================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <img src="assets/images/logo2.png" alt="Logo">
+
+            <h2>Adelin</h2>
+
+            <p>Portofolio Pribadi</p>
+
+            <div class="loader-dots">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="cursorGlow"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+
+            <div class="logo">
+                <img src="assets/images/logo2.png" alt="Logo">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeToggle">
+
+                <i class="fa-solid fa-palette"></i>
+
+            </button>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+        <div id="themePanel">
+
+            <h3>Customize Theme</h3>
+
+            <div class="theme-section">
+
+                <h4>Appearance</h4>
+
+                <button class="mode-btn" data-mode="light">
+
+                    ☀️ Light
+
+                </button>
+
+                <button class="mode-btn" data-mode="dark">
+
+                    🌙 Dark
+
+                </button>
+
+            </div>
+
+            <div class="theme-section">
+
+                <h4>Accent Color</h4>
+
+                <div class="color-options">
+
+                    <span class="color blue" data-theme="blue"></span>
+
+                    <span class="color purple" data-theme="purple"></span>
+
+                    <span class="color green" data-theme="green"></span>
+
+                    <span class="color red" data-theme="red"></span>
+
+                    <span class="color orange" data-theme="orange"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="reveal">
+
+        <div id="particles-js"></div>
+
+        <div class="hero-text">
+
+            <p>Hallo, Saya</p>
+
+            <h1>Adelin</h1>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p class="motto">
+                Menciptakan Solusi, Menghadirkan Inovasi.
+            </p>
+
+            <div class="hero-button">
+
+                <a href="assets/cv/Adelin_3202416071_Personal CV.pdf"
+                    class="btn-primary"
+                    download>
+                     <i class="fa-solid fa-download"></i>
+                     Download CV
+                </a>
+
+                <a href="#contact"
+                    class="btn-secondary">
+                     <i class="fa-solid fa-paper-plane"></i>
+                     Kontak Saya
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/images/me.jpeg"
+                 alt="Profile">
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="reveal">
+
+        <div class="section-title">
+            <h2>Tentang Saya</h2>
+            <p>Mari mengenal saya lebih dekat</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="assets/images/adel.jpeg" alt="Profile">
+            </div>
+
+            <div class="about-content">
+
+                <h3>Hallo! Saya Adelin 👋</h3>
+
+                <div class="about-info">
+
+                    <div class="info-item">
+                        <strong>Nama lengkap</strong>
+                        <span>Adelin</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Umur</strong>
+                        <span>20 Tahun</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Jurusan</strong>
+                        <span>Teknik Informatika</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Universitas</strong>
+                        <span>Politeknik Negeri Pontianak</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Hobi</strong>
+                        <span>Membaca, mendengarkan musik, menonton film / series</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Tujuan Karir</strong>
+                        <span>Full Stack Developer</span>
+                    </div>
+
+                </div>
+
+                <p class="about-text">
+
+                    Perkenalkan, nama saya Adelin. Saat ini saya merupakan mahasiswa Program Studi Teknik Informatika di Politeknik Negeri Pontianak. 
+                    Saya memiliki minat yang besar pada bidang teknologi, khususnya pengembangan perangkat lunak, kecerdasan buatan, dan pengembangan aplikasi 
+                    yang dapat memberikan manfaat nyata bagi masyarakat. Selama menjalani perkuliahan, saya terus berusaha meningkatkan kemampuan teknis maupun 
+                    kemampuan berpikir kritis melalui berbagai tugas, proyek, dan pembelajaran mandiri. Saya percaya bahwa dunia teknologi terus berkembang 
+                    sehingga semangat belajar dan kemampuan beradaptasi merupakan kunci untuk menghadapi tantangan di masa depan.
+
+                    Tujuan karier saya adalah menjadi seorang profesional di bidang teknologi yang mampu memberikan inovasi dan solusi bagi berbagai permasalahan. 
+                    Dalam waktu dekat, saya bertekad untuk melanjutkan pendidikan ke jenjang Sarjana (S1) di Institut Teknologi Sepuluh Nopember (ITS) guna memperdalam 
+                    pengetahuan dan memperluas pengalaman akademik. Setelah itu, saya memiliki cita-cita untuk melanjutkan studi ke luar negeri melalui program 
+                    beasiswa LPDP agar dapat memperoleh wawasan global, membangun jaringan internasional, serta mempelajari teknologi terkini dari universitas terbaik dunia. 
+                    Dengan bekal pendidikan dan pengalaman tersebut, saya berharap dapat berkarier di perusahaan teknologi terkemuka, baik di Jakarta maupun di tingkat 
+                    internasional, seperti Google. Melalui perjalanan tersebut, saya ingin terus berkembang, memberikan dampak positif bagi masyarakat, serta ikut berkontribusi 
+                    dalam kemajuan teknologi Indonesia dan dunia.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Keahlian Teknis</h2>
+
+                <p>Teknologi, framework, dan tools yang saya gunakan untuk menciptakan solusi digital.</p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- HTML -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-html5"></i>
+
+                            <div>
+
+                                <h3>HTML5</h3>
+
+                                <span class="skill-level advanced">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Advanced
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target="95">0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="95"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Semantic HTML</span>
+
+                        <span>2+ Years</span>
+
+                    </div>
+
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-css3-alt"></i>
+
+                            <div>
+
+                                <h3>CSS3</h3>
+
+                                <span class="skill-level advanced">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Advanced
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=90>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="90"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Responsive Design</span>
+
+                        <span>2+ Years</span>
+
+                    </div>
+
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-js"></i>
+
+                            <div>
+
+                                <h3>JavaScript</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=85>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="85"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Interactive Website</span>
+
+                        <span>ES6 & DOM</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Flutter -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+
+                            <div>
+
+                                <h3>Flutter</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=75>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="75"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Cross Platform</span>
+
+                        <span>6+ Projects</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-python"></i>
+
+                            <div>
+
+                                <h3>Python</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=85>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="85"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Automation & AI</span>
+
+                        <span>Problem Solving</span>
+
+                    </div>
+
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-solid fa-database"></i>
+
+                            <div>
+
+                                <h3>MySQL</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=80>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="80"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Database Design</span>
+
+                        <span>SQL Query</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-git-alt"></i>
+
+                            <div>
+
+                                <h3>Git & GitHub</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=75>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="75"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>Version Control</span>
+
+                        <span>Team Collaboration</span>
+
+                    </div>
+
+                </div>
+
+                <!-- Figma -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <div class="skill-info">
+
+                            <i class="fa-brands fa-figma"></i>
+
+                            <div>
+
+                                <h3>Figma</h3>
+
+                                <span class="skill-level intermediate">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                    Intermediate
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="skill-percent" data-target=80>0</span>
+
+                    </div>
+
+                    <div class="skill-progress">
+
+                        <div class="progress-fill" data-width="80"></div>
+
+                    </div>
+
+                    <div class="skill-footer">
+
+                        <span>UI / UX Design</span>
+
+                        <span>Prototype</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Proyek Saya</h2>
+                <p>Proyek terbaru dan pencapaian akademik yang telah saya kerjakan.</p>
+            </div>
+
+            <div class="projects-container">
+
+                <!-- PROJECT 1 -->
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/peduli_panti.jpeg" alt="Peduli Panti">
+
+                        <div class="project-overlay">
+
+                            <a href="#" class="preview-btn"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#" class="github-btn"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Peduli Panti</h3>
+
+                        <div class="project-tech">
+
+                            <span>Flutter</span>
+                            <span>Supabase</span>
+
+                        </div>
+
+                        <p>
+                            Aplikasi mobile untuk berdonasi ke panti asuhan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/dashboard.png" alt="Dashboard Jurnal">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Dashboard Jurnal Farmasi</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Dashboard sederhana untuk mencari jurnal kesehatan, terutama bagi mahasiswa farmasi.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/restoran.png" alt="Restoran">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Dapur Melayu</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Website sederhana restoran dengan masakan tradisional cita rasa suku Melayu.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/login.png" alt="Halaman Login">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Login Page</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Website halaman login dan register sederhana.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/InfoAkses+.png" alt="Info Akses+">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Info Akses+</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Aplikasi penyederhana teks pada fasilitas umum bagi lansia dan orang dengan literasi yang rendah.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 6 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/timer.jpeg" alt="Countdown Timer">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Countdown Timer</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Aplikasi timer sederhana berbasis mobile.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 7 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/notes.jpeg" alt="Note Vault">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Note Vault</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Aplikasi catatan sederhana seperti sticky notes.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 8 -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="assets/projects/daily_budget.jpeg" alt="Daily Budget">
+
+                        <div class="project-overlay">
+
+                            <a href="#"><i class="fa-solid fa-eye"></i>Preview</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Daily Budget</h3>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <p>
+
+                            Aplikasi keuangan tentang pemasukan dan pengeluaran sehari - hari.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Galeri</h2>
+                <p>Momen, aktivitas, dan kenangan yang telah saya abadikan.</p>
+            </div>
+
+            <div class="gallery-container">
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/1.jpeg" alt="Gallery 1">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/2.jpeg" alt="Gallery 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/3.jpeg" alt="Gallery 3">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/4.jpeg" alt="Gallery 4">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/5.jpeg" alt="Gallery 5">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/6.jpeg" alt="Gallery 6">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/7.jpeg" alt="Gallery 7">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/8.jpeg" alt="Gallery 8">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/9.jpeg" alt="Gallery 9">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/10.jpeg" alt="Gallery 10">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/11.jpeg" alt="Gallery 11">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/12.jpeg" alt="Gallery 12">
+                </div>
+
+            </div>
+
+            <div class="video-section">
+
+                <h3>Video Perkenalan Diri</h3>
+
+                <div class="video-wrapper">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/GBfSeRzxRPY"
+                        title="Potofolio Introduction Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Perjalanan Saya</h2>
+                <p>Riwayat pendidikan dan pengalaman belajar yang terus berkembang</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2024</span>
+
+                        <h3>Memulai Pendidikan di Teknik Informatika</h3>
+
+                        <p>
+                            Memulai pendidikan di Program Studi Teknik Informatika Politeknik Negeri Pontianak serta mempelajari dasar-dasar pemrograman dan pengembangan perangkat lunak.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2027</span>
+
+                        <h3>Melanjutkan Studi S1 di ITS</h3>
+
+                        <p>
+                            Melanjutkan pendidikan Sarjana di Institut Teknologi Sepuluh Nopember untuk memperdalam ilmu komputer, memperluas pengalaman, dan mengembangkan kemampuan di bidang teknologi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2029</span>
+
+                        <h3>Melanjutkan Studi S2 dengan Beasiswa LPDP</h3>
+
+                        <p>
+                            Melanjutkan pendidikan Magister di universitas luar negeri melalui Beasiswa LPDP untuk memperluas wawasan global dan mendalami teknologi terkini.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-year">2032</span>
+
+                        <h3>Berkarier di Perusahaan Teknologi</h3>
+
+                        <p>
+                            Membangun karier sebagai profesional di perusahaan teknologi terkemuka, baik di Indonesia maupun di tingkat global, dengan menciptakan solusi digital yang inovatif dan berdampak.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Hubungi Saya</h2>
+
+                <p>Mari berkolaborasi dan berkarya bersama</p>
+
+            </div>
+
+            <div class="contact-container">
+
+                <!-- LEFT -->
+
+                <div class="contact-info">
+
+                    <a
+                        href="mailto:ade465216@gmail.com"
+                        class="contact-card"
+                    >
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>Email</h3>
+
+                        <p>ade465216@gmail.com</p>
+
+                    </div>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/6289678112585"
+                        target="_blank"
+                        class="contact-card"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <div>
+
+                            <h3>WhatsApp</h3>
+
+                            <p>+62 896-7811-2585</p>
+
+                        </div>
+
+                    </a>
+
+                    <div class="contact-card">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+
+                            <h3>GitHub</h3>
+
+                            <a href="https://github.com/Adelin487" target="_blank">
+                                github.com/Adelin487
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://instagram.com/adelin5986"
+                        target="_blank"
+                        class="contact-card"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <div>
+
+                            <h3>Instagram</h3>
+
+                            <p>@adelin5986</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <form id="contactForm" class="contact-form">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Nama Anda"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Anda"
+                        required>
+
+                    <textarea
+                        id="message"
+                        rows="7"
+                        placeholder="Pesan..."
+                        required></textarea>
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Kirim Pesan
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+
+                <img src="assets/images/logo2.png" alt="Logo">
+
+                <!-- <h2>Adelin</h2> -->
+
+            </div>
+
+            <p class="footer-description">
+                Membangun solusi digital dengan semangat dan kreativitas.
+            </p>
+
+            <!-- Navigation -->
+            <ul class="footer-menu">
+
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <!-- Social Media -->
+            <div class="footer-social">
+
+                <a href="https://github.com/Adelin487" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://instagram.com/adelin5986" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/Ade Lin" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:ade465216@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-copy">
+
+                © 2026 Adelin. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <button id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/skills.js"></script>
+
+</body>
+
+</html>

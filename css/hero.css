@@ -1,0 +1,167 @@
+#hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text p:first-child{
+    color:var(--primary);
+    font-size:20px;
+}
+
+.hero-text h1{
+    font-size:64px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    font-size:28px;
+    color:var(--text);
+}
+
+.motto{
+    margin:25px 0;
+    line-height:1.7;
+}
+
+.hero-button{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+}
+
+.btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-light);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+.hero-image{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:360px;
+    height:360px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid var(--white);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+/* ===================================
+        TYPING EFFECT
+=================================== */
+
+#typing{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+#typing::after{
+
+    content:"|";
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+#hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+#particles-js{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:0;
+
+}
+
+.hero-text,
+.hero-image{
+
+    position:relative;
+
+    z-index:2;
+
+}

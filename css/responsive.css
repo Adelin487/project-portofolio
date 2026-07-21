@@ -1,0 +1,262 @@
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+
+        position:absolute;
+
+        top:75px;
+
+        left:-100%;
+
+        width:100%;
+
+        background:white;
+
+        flex-direction:column;
+
+        padding:30px;
+
+        transition:.35s;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    }
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+    #hero{
+
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:120px;
+
+    }
+
+    .hero-button{
+
+        justify-content:center;
+        flex-wrap:wrap;
+
+    }
+
+    .hero-text h1{
+
+        font-size:48px;
+
+    }
+
+}
+
+/* ABOUT */
+
+@media(max-width:768px){
+
+    .about-container{
+
+        flex-direction:column;
+
+    }
+
+    .about-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-image{
+
+        display:flex;
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ===================================
+        PROJECTS
+=================================== */
+
+@media(max-width:992px){
+
+    .projects-container{
+
+        columns:2;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .projects-container{
+
+        columns:1;
+
+    }
+
+}
+
+/* ===================================
+        GALLERY
+=================================== */
+
+@media(max-width:992px){
+
+    .gallery-item{
+
+        flex:1 1 calc(50% - 20px);
+
+        max-width:calc(50% - 20px);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .gallery-item{
+
+        flex:1 1 100%;
+
+        max-width:100%;
+
+    }
+
+    .video-wrapper iframe{
+
+        height:250px;
+
+    }
+
+}
+
+/* ===================================
+        TIMELINE
+=================================== */
+
+@media(max-width:768px){
+
+    .timeline{
+
+        padding-left:35px;
+
+    }
+
+    .timeline::before{
+
+        left:15px;
+
+    }
+
+    .timeline-dot{
+
+        left:-28px;
+
+    }
+
+}
+
+/* ===================================
+            CONTACT
+=================================== */
+
+@media(max-width:768px){
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ===================================
+            FOOTER
+=================================== */
+
+@media(max-width:576px){
+
+    .footer-menu{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}
+
+/* ===================================
+        MOBILE NAVBAR
+=================================== */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .nav-menu{
+
+        position:absolute;
+
+        top:75px;
+
+        left:-100%;
+
+        width:100%;
+
+        background:#fff;
+
+        flex-direction:column;
+
+        padding:25px;
+
+        transition:.35s;
+
+    }
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+}
+
+/* ===================================
+        SKILLS RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .skill-percent{
+
+        font-size:22px;
+
+    }
+
+    .skill-info>i{
+
+        font-size:48px;
+
+    }
+
+}

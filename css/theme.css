@@ -1,0 +1,265 @@
+/* ===================================
+        THEME CUSTOMIZER
+=================================== */
+
+#themeToggle{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+    transition:.35s;
+
+    box-shadow:0 5px 15px rgba(37,99,235,.25);
+
+}
+
+#themeToggle:hover{
+
+    transform:rotate(25deg) scale(1.08);
+
+}
+
+#themePanel{
+
+    position:fixed;
+
+    top:90px;
+
+    right:30px;
+
+    width:290px;
+
+    background:var(--white);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-15px);
+
+    transition:.35s;
+
+}
+
+#themePanel.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+#themePanel h3{
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+    color:var(--dark);
+
+}
+
+.theme-section{
+
+    margin-bottom:25px;
+
+}
+
+.theme-section h4{
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+    color:var(--text);
+
+}
+
+.mode-btn{
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#EEF2FF;
+
+    color:#334155;
+
+    margin-right:10px;
+
+    transition:.3s;
+
+}
+
+.mode-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.mode-btn.active{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+.color-options{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:10px;
+
+}
+
+.color{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border:3px solid transparent;
+
+}
+
+.color:hover{
+
+    transform:scale(1.2);
+
+}
+
+.color.active{
+
+    border-color:#CBD5E1;
+
+}
+
+.blue{
+
+    background:#2563EB;
+
+}
+
+.purple{
+
+    background:#7C3AED;
+
+}
+
+.green{
+
+    background:#10B981;
+
+}
+
+.red{
+
+    background:#EF4444;
+
+}
+
+.orange{
+
+    background:#F97316;
+
+}
+
+/* ===================================
+        COLOR THEMES
+=================================== */
+
+/* Blue */
+body.theme-blue{
+    --primary:#2563EB;
+    --primary-light:#38BDF8;
+}
+
+/* Purple */
+body.theme-purple{
+    --primary:#7C3AED;
+    --primary-light:#A855F7;
+}
+
+/* Green */
+body.theme-green{
+    --primary:#059669;
+    --primary-light:#10B981;
+}
+
+/* Red */
+body.theme-red{
+    --primary:#DC2626;
+    --primary-light:#F87171;
+}
+
+/* Orange */
+body.theme-orange{
+    --primary:#EA580C;
+    --primary-light:#FB923C;
+}
+
+/* ===================================
+        LIGHT / DARK MODE
+=================================== */
+
+body.dark-mode{
+
+    --background:#0F172A;
+
+    --white:#1E293B;
+
+    --dark:#F8FAFC;
+
+    --text:#CBD5E1;
+
+    --border:#334155;
+
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+body.dark-mode{
+
+    --text-secondary:#CBD5E1;
+
+}

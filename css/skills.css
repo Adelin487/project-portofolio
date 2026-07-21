@@ -1,0 +1,317 @@
+/* ===================================
+        SKILLS
+=================================== */
+
+.skills-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+/* ===================================
+        SKILL CARD
+=================================== */
+
+.skill-card{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:all .35s ease;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.skill-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+        circle at var(--x) var(--y),
+
+        rgba(255,255,255,.25),
+
+        transparent 45%
+
+    );
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+.skill-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.skill-card:hover::before{
+
+    opacity:1;
+
+}
+
+.skill-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* ===================================
+        HEADER
+=================================== */
+
+.skill-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:22px;
+
+}
+
+.skill-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ===================================
+        ICON
+=================================== */
+
+.skill-info>i{
+
+    font-size:58px;
+
+    color:var(--primary);
+
+    transition:.35s;
+
+}
+
+.skill-card:hover .skill-info>i{
+
+    transform:
+        scale(1.15)
+        rotate(-10deg);
+
+}
+
+/* ===================================
+        TITLE
+=================================== */
+
+.skill-header h3{
+
+    font-size:23px;
+
+    color:var(--dark);
+
+    margin-bottom:8px;
+
+}
+
+/* ===================================
+        PERCENT
+=================================== */
+
+.skill-percent{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+/* ===================================
+        BADGE
+=================================== */
+
+.skill-level{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.skill-level i{
+
+    font-size:12px;
+
+}
+
+.skill-level.advanced{
+
+    background:#DCFCE7;
+
+    color:#166534;
+
+}
+
+.skill-level.intermediate{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+}
+
+/* ===================================
+        PROGRESS
+=================================== */
+
+.skill-progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#E2E8F0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin:24px 0;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    box-shadow:
+        0 0 15px var(--primary);
+
+    transition:width 2s ease;
+
+}
+
+/* ===================================
+        FOOTER
+=================================== */
+
+.skill-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:14px;
+
+    color:var(--text);
+
+}
+
+/* ===================================
+        DARK MODE
+=================================== */
+
+body.dark-mode .skill-card{
+
+    background:rgba(30,41,59,.85);
+
+}
+
+body.dark-mode .skill-progress{
+
+    background:#334155;
+
+}
+
+body.dark-mode .skill-level.advanced{
+
+    background:#14532D;
+
+    color:#DCFCE7;
+
+}
+
+body.dark-mode .skill-level.intermediate{
+
+    background:#1E3A8A;
+
+    color:#DBEAFE;
+
+}

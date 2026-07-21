@@ -1,0 +1,188 @@
+/* ===================================
+            PROJECTS
+=================================== */
+
+.projects-container{
+
+    columns:3 320px;
+
+    column-gap:30px;
+
+}
+
+/* CARD */
+
+.project-card{
+
+    display:inline-block;
+
+    width:100%;
+
+    margin-bottom:30px;
+
+    break-inside:avoid;
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.15);
+
+}
+
+/* IMAGE */
+
+.project-image{
+
+    position:relative;
+
+    background:#F8FAFC;
+
+    overflow:hidden;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+/* ZOOM */
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* OVERLAY */
+
+.project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(15,23,42,.65);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.project-card:hover .project-overlay{
+
+    opacity:1;
+
+}
+
+/* BUTTON */
+
+.project-overlay a{
+
+    background:var(--white);
+
+    color:var(--dark);
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-overlay a:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+/* CONTENT */
+
+.project-content{
+
+    padding:25px;
+
+}
+
+.project-content h3{
+
+    margin-bottom:15px;
+
+    color:var(--dark);
+
+    font-size:24px;
+
+}
+
+.project-content p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+/* BADGE */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+}
+
+.project-tech span{
+
+    background:#DBEAFE;
+
+    color:var(--primary);
+
+    padding:7px 16px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}

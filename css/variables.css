@@ -1,0 +1,61 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:100px 8%;
+}
+
+/* ===================================
+   COLOR VARIABLES
+=================================== */
+
+:root{
+
+    --primary:#2563EB;
+    --primary-light:#38BDF8;
+
+    --dark:#0F172A;
+    --text:#475569;
+    --text-secondary:#64748B;
+
+    --background:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --border:#E2E8F0;
+
+    --shadow:0 10px 30px rgba(15,23,42,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}

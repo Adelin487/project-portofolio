@@ -1,0 +1,20 @@
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+    color:var(--dark);
+
+}
+
+.section-title p{
+
+    color:var(--text);
+    margin-top:10px;
+
+}

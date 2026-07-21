@@ -1,0 +1,161 @@
+/* ===================================
+        LOADING SCREEN
+=================================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#F8FAFC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .6s ease;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-content img{
+
+    width:110px;
+
+    margin:auto;
+
+    filter:drop-shadow(0 12px 25px rgba(37,99,235,.25));
+
+    animation:logoFloat 2.5s ease-in-out infinite;
+
+}
+
+.loader-content h2{
+
+    margin-top:20px;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+    letter-spacing:1px;
+
+}
+
+.loader-content p{
+
+    margin-top:8px;
+
+    margin-bottom:35px;
+
+    color:#64748B;
+
+    font-size:16px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+.loader-hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+/* ===================================
+        LOADER DOTS
+=================================== */
+
+.loader-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+.loader-dots span{
+
+    width:14px;
+
+    height:14px;
+
+    background:linear-gradient(135deg,#2563EB,#38BDF8);
+
+    border-radius:50%;
+
+    animation:bounce 1.2s infinite ease-in-out;
+
+}
+
+.loader-dots span:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.loader-dots span:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes bounce{
+
+    0%,80%,100%{
+
+        transform:scale(.5);
+
+        opacity:.5;
+
+    }
+
+    40%{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes logoFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
