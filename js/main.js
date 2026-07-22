@@ -160,11 +160,11 @@ contactForm.addEventListener("submit", function(e){
 
     Swal.fire({
 
-        icon:"success",
+        icon:"Berhasil",
 
-        title:"Message Sent!",
+        title:"Pesan Terkirim!",
 
-        text:"Thank you for contacting me. I'll get back to you soon.",
+        text:"Terima kasih telah menghubungi saya. Saya akan segera menghubungi Anda",
 
         confirmButtonColor:"#2563EB"
 
